@@ -37,7 +37,16 @@
         <h2 class="exelent">
             Веселые картинки
         </h2>
-        <div><img src="https://cdn-icons-png.flaticon.com/256/4330/4330334.png" alt=""></div>
+        <table>
+            <tr>
+                <td><div><img src="C:\Users\stud\Desktop\di\invest\img\tired_cat.jpg" alt="Уставший кот" width="400"></div></td>
+                <td><div><img src="C:\Users\stud\Desktop\di\invest\img\panda.jpg" alt="Панда висит" width="250"></div></td>
+                <td><div><img src="C:\Users\stud\Desktop\di\invest\img\dumb_husky.jpg" alt="Смешной хаски" width="300"></div></td>
+                <td><div><img src="C:\Users\stud\Desktop\di\invest\img\boss_cat.jpeg" alt="Босс Кот" width="350"></div></td>
+                <td><div><img src="C:\Users\stud\Desktop\di\invest\img\cat_in_box.jpeg" alt="Кот в коробке" width="300"></div></td>
+                <!--<div><img src="https://cdn-icons-png.flaticon.com/256/4330/4330334.png" alt=""></div>-->
+            </tr>
+        </table>
     </div>
     <div id="bell_schedule">
         <h2 class="exelent">
@@ -63,11 +72,89 @@
         <h2 class="exelent">
             Расписание пар
         </h2>
+        <table>
+            <thead>
+                <tr>
+                    <td>Номер пары</td>
+                    <td>Название предмета</td>
+                    <td>Аудитория</td>
+                    <td>Преподаватель</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Выпуклый анализ</td>
+                    <td>238</td>
+                    <td>Щелчков К. А.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Выпуклый анализ</td>
+                    <td>238</td>
+                    <td>Щелчков К. А.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Теория чисел</td>
+                    <td>221</td>
+                    <td>Мерзляков А. С.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Методы оптимизации</td>
+                    <td>221</td>
+                    <td>Банников А. С.</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <div id="diary">
-        <h2 class="exelent">
+        <h2 class="exelent"=>
             Дневник
         </h2>
+        <div>
+            <form action="">
+                <label for="fio">Фамилия, имя, отчество: </label>
+                <input type="text" id="fio" name="fio" value="Иванова Ивана Ивановича">
+            </form>
+        </div>
+        <div>
+            <label for="gender">Пол: </label>
+            <p><input name="male" type="radio" value="Мужской" checked>Мужской</p>
+            <p><input name="male" type="radio" value="Женский">Женский</p>
+        </div>
+        <div>
+            <label for="school">Школа: </label>
+            <input type="text" name="school" id="school" value="Школы №20">
+        </div>
+        <div>
+            <label for="locality">Населенный пункт: </label>
+            <input type="text" name="locality" id="locality" value="г.Литцк">
+        </div> 
+        <div>
+            <label for="class">Класс: </label>
+            <input type="text" name="class" id="class" value="11Б">
+        </div>
+        <div>
+            <label for="color">Цвет обложки: </label>
+            <input type="color" name="color" id="color" value="#ff1ff1">
+        </div>
+        <div>
+            <label for="year">Год начала учебного года: </label>
+            <input type="number" name="year" id="year" min="2010" max="2020" value="2010">
+        </div>
+        <div>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" value="ivan@ltk.lau">
+        </div>
+        <div>
+            <label for="tel">Телефон: </label>
+            <input type="tel" name="tel" id="tel" value="+7**********">
+        </div>
+        <div>
+            <input type="submit" id="create" value="Создать">
+        </div>    
     </div>
     <div id="accounting"">
         <h2 class="exelent">
