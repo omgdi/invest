@@ -31,6 +31,7 @@
             font-size: 20px;
             line-height: 60px;
             width: inherit;
+            padding: 10px;
         }
         #chat {
             width: 100%;
@@ -41,7 +42,7 @@
         }
         .message {
             width: fit-content;
-            background-color: #ccc;
+            background-color: red;
             border: 1px solid #999;
             border-radius: 10px;
             padding: 10px;
@@ -71,9 +72,36 @@
             )
         }
 
-        for (let i = 0; i < 25; i++) {
-            newMessage('Текстовое сообщение ' + i);
+        function sendMessage() {
+            let message = document.querySelector('#message');
+            let text = message.value;
+            if (text.trim().length > 0) {
+                newMessage(text);
+                message.value = '';
+            }
         }
+
+        function sendMessageKeyUp (e) {
+            if (e.code == 'Enter') {
+                sendMessage();
+            }
+        }
+
+        window.onload = () => {
+            document.querySelector('#sent_message').onclick = sendMessage;
+            document.querySelector('#message').onkeyup = sendMessageKeyUp;
+        }
+
+
+
+
+
+
+
+
+        // for (let i = 0; i < 25; i++) {
+        //     newMessage('Текстовое сообщение ' + i);
+        // }
     </script>
 </body>
 </html>
