@@ -460,7 +460,7 @@
                     <div>${document.querySelector('#school').value}</div>
                     <div>${document.querySelector('#locality').value}</div>
                     <div>${document.querySelector('#fio').value}</div>
-                    <div>${document.querySelector('[name="year"]').value}/${document.querySelector('[name="year"]').value+1} учебного года</div>
+                    <div>${document.querySelector('[name="year"]').value}/${Number(document.querySelector('[name="year"]').value)+1} учебного года</div>
                     <div>${document.querySelector('#email').value}, ${document.querySelector('#tel').value}</div>
                 `;
                 newWin.document.write(template);
